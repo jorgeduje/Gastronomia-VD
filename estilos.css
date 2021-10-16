@@ -1,0 +1,182 @@
+/* GLOBALES */
+
+:root {
+    --colorPrimario: #9d0208;
+    --colorSecundario: #ffba08;
+    --colorTerciario: #020918;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* CABECERO */
+
+
+header {
+    background-image: url(./img/bgVD.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mt-10 {
+    margin-bottom: 10px;
+    color: cornsilk;
+}
+/* PRINCIPAL */
+
+.sponsors {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 1px;
+    animation: mostrar 0.9s ease-in-out both;
+    padding: 30px 0;
+    background-color: cornsilk;
+}
+
+.card {
+    width: 30% !important;
+    box-shadow: #03071e 6px 6px 10px;
+    padding: 0!important;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+.bg-danger {
+    background-color: var(--colorPrimario) !important;
+    color: var(--colorSecundario) !important;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.bg-warning {
+    background-color: var(--colorSecundario) !important;
+}
+
+.bg-dark {
+    background-color: var(--colorTerciario) !important;
+}
+
+.btn-menu{
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+
+.btn-menu:hover{
+    border: rgba(0, 128, 0, 0.692) 2px solid;
+    color: rgba(0, 128, 0, 0.692);
+    background-color: white;
+    font-weight: bold;
+    
+}
+
+
+
+/* PIE DE PAGINA */
+
+.footer {
+    background-color: var(--colorTerciario) !important;
+    padding: 20px 0;
+}
+
+.titulos-programadores {
+    color: var(--colorSecundario);
+}
+
+.programadores {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 40px 0 10px 0;
+    color: cornsilk;
+}
+
+.logoit {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.itwork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-text>a{
+    color: black;
+    text-decoration: none;
+    margin-left: .5rem;
+}
+
+.card-text>a:hover{
+    color: teal;
+}
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 750px) {
+    .card {
+        width: 44% !important;
+    }
+    .bg-danger {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 80% !important;
+    }
+    header {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        background-position: right;
+    }
+    .mt-10 {
+        margin-top: 40px;
+    }
+    .bg-danger {
+        font-size: 25px;
+    }
+    .programadores {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoit {
+        width: 100px;
+    }
+}
+/* ANIMACIONES */
+
+@keyframes mostrar {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pintar {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
